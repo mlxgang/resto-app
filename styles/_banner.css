@@ -1,0 +1,18 @@
+.banner {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--text-primary-dark);
+}
+
+.banner__title {
+    color: var(--text-primary-light);
+}
+
+.banner__icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}

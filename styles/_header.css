@@ -19,9 +19,15 @@
 }
 
 .navigation__item {
-    color: var(--text-secondary-color);
+    color: var(--text-secondary-dark);
     font-size: 16px;
     line-height: 24px;
+}
+
+.other-info {
+    display: flex;
+    align-items: center;
+    gap: 64px;
 }
 
 .contacts {
@@ -32,14 +38,38 @@
 }
 
 .contacts__phone {
-    color: var(--text-secondary-color);
+    color: var(--text-secondary-dark);
     font-size: 18px;
     line-height: 24px;
 }
 
 .contacts__workings-hours {
-    color: var(--text-secondary-color);
+    color: var(--text-secondary-dark);
     font-size: 12px;
     line-height: 16px;
     font-weight: normal;
+}
+
+.user-activity {
+    display: flex;
+    gap: 16px;
+}
+
+.user-activity__button {
+    display: flex;
+    padding: 10px 16px;
+    border: 2px solid var(--text-primary-dark);
+    border-radius: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    /*height: 48px;*/
+}
+
+.user-activity__button-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.user-activity__button_secondary {
+    background-color: var(--text-primary-dark);
 }

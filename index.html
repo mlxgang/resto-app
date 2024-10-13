@@ -10,6 +10,14 @@
 </head>
 <body>
 <header class="header">
+    <div class="banner">
+        <span class="banner__title">
+            Бесплатная доставка от 1 000 ₽
+        </span>
+        <picture class="banner__icon">
+            <img src="public/icons/24/x-mark.svg" alt="Закрыть баннер">
+        </picture>
+    </div>
     <div class="header__content">
         <a href="#" class="logo">
             <picture>
@@ -25,40 +33,200 @@
                 <li class="navigation__item"><a href="#">Зоны доставки</a></li>
             </ul>
         </nav>
-        <address class="contacts">
-            <span><a class="contacts__phone" href="tel:+01234567890">+0 (123) 456 78-90</a></span>
-            <span class="contacts__workings-hours">Прием заказов с 10:00 до 22:40</span>
-        </address>
+
+        <div class="other-info">
+            <address class="contacts">
+                <span><a class="contacts__phone" href="tel:+01234567890">+0 (123) 456 78-90</a></span>
+                <span class="contacts__workings-hours">Прием заказов с 10:00 до 22:40</span>
+            </address>
+            <div class="user-activity">
+                <a href="#" class="user-activity__button user-activity__button_primary">
+                    <picture class="user-activity__button-icon">
+                        <img src="public/icons/24/user.svg" alt="Перейти в профиль">
+                    </picture>
+                </a>
+                <a href="#" class="user-activity__button user-activity__button_secondary">
+                    <img class="user-activity__button-icon" src="public/icons/24/cart.svg" alt="Перейти в корзину">
+                </a>
+            </div>
+        </div>
+
     </div>
 </header>
 <main>
-    <section class="main">
-        <h1 class="main__title">Меню</h1>
-        <div class="main__content">
-            <ul class="products">
+    <section class="section">
+        <h1 class="section__title">Меню</h1>
+        <div class="section__content">
+            <ul class="card-list">
                 <li class="card">
-                    <img class="card__image" src="images/image-01.jpg" alt="Раздел с пицца">
-                    <a href="#" class="card__overlay">
-                        <span class="card__title">Пицца</span>
-                    </a>
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/pizzas.jpg" alt="Раздел с пиццей">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <span class="card__overlay-title">Пицца</span>
+                        </a>
+                        <div class="badge-container"></div>
+                    </div>
                 </li>
                 <li class="card">
-                    <img class="card__image" src="images/image-02.jpg" alt="Раздел с супами">
-                    <a href="#" class="card__overlay">
-                        <span class="card__title">Супы</span>
-                    </a>
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/soups.jpg" alt="Раздел с супами">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <span class="card__overlay-title">Супы</span>
+                        </a>
+                        <div class="badge-container"></div>
+                    </div>
                 </li>
                 <li class="card">
-                    <img class="card__image" src="images/image-03.jpg" alt="Раздел с горячими блюдами">
-                    <a href="#" class="card__overlay">
-                        <span class="card__title">Горячие блюда</span>
-                    </a>
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/hot-dishes.jpg" alt="Раздел с горячими блюдами">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <span class="card__overlay-title">Горячие блюда</span>
+                        </a>
+                        <div class="badge-container"></div>
+                    </div>
                 </li>
                 <li class="card">
-                    <img class="card__image" src="images/image-04.jpg" alt="Раздел с салатами">
-                    <a href="#" class="card__overlay">
-                        <span class="card__title">Салаты</span>
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/salads.jpg" alt="Раздел с салатами">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <span class="card__overlay-title">Салаты</span>
+                        </a>
+                        <div class="badge-container"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="section__title">Новинки</h1>
+        <div class="section__content">
+            <ul class="card-list">
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/chinese-egg-soup.jpg" alt="Китайский яичный суп">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container">
+                            <div class="badge-container__badge badge-container__badge_vegan"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Китайский яичный суп</h3>
+                        <p class="card-text__description">Традиционный китайский суп с яйцом и томатами черри</p>
                     </a>
+                    <button class="card__price">350 ₽</button>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/paella.jpg" alt="Паэлья">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container">
+                            <div class="badge-container__badge badge-container__badge_vegan"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Паэлья</h3>
+                        <p class="card-text__description">Традиционное испанское блюдо — рис, колбаски чоризо,
+                            куриное бедро, кальмар, кукуруза, горошек, специи</p>
+                    </a>
+                    <button class="card__price">660 ₽</button>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/beef-bourguignon.jpg" alt="Биф Бургеньон">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container"></div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Биф Бургеньон</h3>
+                        <p class="card-text__description">Блюдо французской кухни — тушёные кусочки говядины с
+                            картофелем и болгарским перцем</p>
+                    </a>
+                    <button class="card__price">630 ₽</button>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/cucumbers.jpg" alt="Битые огурцы">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container">
+                            <div class="badge-container__badge badge-container__badge_vegan"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Битые огурцы</h3>
+                        <p class="card-text__description">Салат из свежих битых огурцов с уйгурским соусом, кешью и
+                            кунжутом</p>
+                    </a>
+                    <button class="card__price">320 ₽</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="section__title">Популярное</h1>
+        <div class="section__content">
+            <ul class="card-list">
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/pepperoni.jpg" alt="Пепперони">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container">
+                            <div class="badge-container__badge badge-container__badge_vegan"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Пепперони</h3>
+                        <p class="card-text__description">Просто и вкусно - томатная основа маринара, колбаски
+                            пепперони
+                            и сыр моцарелла</p>
+                    </a>
+                    <button class="card__price">660 ₽</button>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/gorgonzola-pear.jpg" alt="Груша Горгонзола">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container">
+                            <div class="badge-container__badge badge-container__badge_vegan"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Груша Горгонзола</h3>
+                        <p class="card-text__description">Нежная пицца на основе сливочного соуса с сыром
+                            горгондзола,
+                            грушей, медом и кедровыми орехами</p>
+                    </a>
+                    <button class="card__price">780 ₽</button>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/pho-bo.jpg" alt="Фо Бо">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container"></div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Фо Бо</h3>
+                        <p class="card-text__description">Вьетнамский суп с рисовой лапшой, в котором используется
+                            говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма,
+                            острый соус шрирача, азиатский уксус и лаоганма</p>
+                    </a>
+                    <button class="card__price">490 ₽</button>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="images/tom-yam-seafood.jpg" alt="Том Ям с морепродуктами">
+                        <a href="#" class="card__overlay"></a>
+                        <div class="badge-container">
+                            <div class="badge-container__badge badge-container__badge_spicy"></div>
+                            <div class="badge-container__badge badge-container__badge_seafood"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-text">
+                        <h3 class="card-text__title">Том Ям с морепродуктами</h3>
+                        <p class="card-text__description">Просто и вкусно - томатная основа маринара, колбаски
+                            пепперони
+                            и сыр моцарелла</p>
+                    </a>
+                    <button class="card__price">590 ₽</button>
                 </li>
             </ul>
         </div>
