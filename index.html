@@ -10,55 +10,59 @@
 </head>
 <body>
 <header class="header">
-    <a href="#">
-        <picture>
-            <img src="public/logo-desktop.svg" alt="Логотип Resto App">
-        </picture>
-    </a>
-    <nav class="header-navigation">
-        <ul class="navigation">
-            <li class="navigation__item"><a href="#">Меню</a></li>
-            <li class="navigation__item"><a href="#">Акции</a></li>
-            <li class="navigation__item"><a href="#">О нас</a></li>
-            <li class="navigation__item"><a href="#">События</a></li>
-            <li class="navigation__item"><a href="#">Зоны доставки</a></li>
-        </ul>
-    </nav>
-    <address class="contacts">
-        <span><a class="contacts__phone" href="tel:+01234567890">+0 (123) 456 78-90</a></span>
-        <span class="contacts__workings-hours">Прием заказов с 10:00 до 22:40</span>
-    </address>
-</header>
-<main class="main">
-    <h1 class="main__title">Меню</h1>
-    <div class="main__content">
-        <ul class="products">
-            <li class="card">
-                <img class="card__image" src="images/image-01.jpg" alt="Продукт 1">
-                <a href="#" class="card__overlay">
-                    <span class="card__title">Пицца</span>
-                </a>
-            </li>
-            <li class="card">
-                <img class="card__image" src="images/image-02.jpg" alt="Продукт 2">
-                <a href="#" class="card__overlay">
-                    <span class="card__title">Супы</span>
-                </a>
-            </li>
-            <li class="card">
-                <img class="card__image" src="images/image-03.jpg" alt="Продукт 3">
-                <a href="#" class="card__overlay">
-                    <span class="card__title">Горячие блюда</span>
-                </a>
-            </li>
-            <li class="card">
-                <img class="card__image" src="images/image-04.jpg" alt="Продукт 4">
-                <a href="#" class="card__overlay">
-                    <span class="card__title">Салаты</span>
-                </a>
-            </li>
-        </ul>
+    <div class="header__content">
+        <a href="#" class="logo">
+            <picture>
+                <img src="public/logo-desktop.svg" alt="Логотип Resto App">
+            </picture>
+        </a>
+        <nav class="navigation">
+            <ul class="navigation-wrapper">
+                <li class="navigation__item"><a href="#">Меню</a></li>
+                <li class="navigation__item"><a href="#">Акции</a></li>
+                <li class="navigation__item"><a href="#">О нас</a></li>
+                <li class="navigation__item"><a href="#">События</a></li>
+                <li class="navigation__item"><a href="#">Зоны доставки</a></li>
+            </ul>
+        </nav>
+        <address class="contacts">
+            <span><a class="contacts__phone" href="tel:+01234567890">+0 (123) 456 78-90</a></span>
+            <span class="contacts__workings-hours">Прием заказов с 10:00 до 22:40</span>
+        </address>
     </div>
+</header>
+<main>
+    <section class="main">
+        <h1 class="main__title">Меню</h1>
+        <div class="main__content">
+            <ul class="products">
+                <li class="card">
+                    <img class="card__image" src="images/image-01.jpg" alt="Раздел с пицца">
+                    <a href="#" class="card__overlay">
+                        <span class="card__title">Пицца</span>
+                    </a>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="images/image-02.jpg" alt="Раздел с супами">
+                    <a href="#" class="card__overlay">
+                        <span class="card__title">Супы</span>
+                    </a>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="images/image-03.jpg" alt="Раздел с горячими блюдами">
+                    <a href="#" class="card__overlay">
+                        <span class="card__title">Горячие блюда</span>
+                    </a>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="images/image-04.jpg" alt="Раздел с салатами">
+                    <a href="#" class="card__overlay">
+                        <span class="card__title">Салаты</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </main>
 </body>
 </html>

@@ -1,14 +1,17 @@
 .header {
     background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
-    min-width: 1440px;
-    padding: 16px 64px;
+}
 
+.header__content {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 16px 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navigation {
+.navigation-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
