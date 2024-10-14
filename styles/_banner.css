@@ -8,6 +8,8 @@
 }
 
 .banner__title {
+    font-size: 18px;
+    line-height: 24px;
     color: var(--text-primary-light);
 }
 

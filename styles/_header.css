@@ -57,12 +57,11 @@
 
 .user-activity__button {
     display: flex;
-    padding: 10px 16px;
+    padding: 10px 14px;
     border: 2px solid var(--text-primary-dark);
     border-radius: 16px;
     background-color: transparent;
     cursor: pointer;
-    /*height: 48px;*/
 }
 
 .user-activity__button-icon {
