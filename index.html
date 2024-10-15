@@ -20,9 +20,7 @@
     </div>
     <div class="header__content">
         <a href="#" class="logo">
-            <picture>
-                <img src="public/logo-desktop.svg" alt="Логотип Resto App">
-            </picture>
+            <img src="public/logo-desktop.svg" alt="Логотип Resto App">
         </a>
         <nav class="navigation">
             <ul class="navigation-wrapper">
@@ -36,18 +34,16 @@
 
         <div class="other-info">
             <address class="contacts">
-                <span><a class="contacts__phone" href="tel:+01234567890">+0 (123) 456 78-90</a></span>
+                <a class="contacts__phone" href="tel:+01234567890">+0 (123) 456 78-90</a>
                 <span class="contacts__workings-hours">Прием заказов с 10:00 до 22:40</span>
             </address>
             <div class="user-activity">
                 <a href="#" class="user-activity__button user-activity__button_primary">
-                    <picture class="user-activity__button-icon">
-                        <img src="public/icons/24/user.svg" alt="Перейти в профиль">
-                    </picture>
+                    <img class="user-activity__button-icon" src="public/icons/24/user.svg" alt="Перейти в профиль">
                 </a>
-                <a href="#" class="user-activity__button user-activity__button_secondary">
-                    <img class="user-activity__button-icon" src="public/icons/24/cart.svg" alt="Перейти в корзину">
-                </a>
+                <button class="user-activity__button user-activity__button_secondary">
+                    <img class="user-activity__button-icon" src="public/icons/24/cart.svg" alt="Открыть корзину">
+                </button>
             </div>
         </div>
 
@@ -60,7 +56,7 @@
             <ul class="card-container">
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/pizzas.jpg" alt="Раздел с пиццей">
+                        <img class="card__image" src="images/menu-categories/pizzas.jpg" alt="Раздел с пиццей">
                         <a href="#" class="card__overlay card__overlay_gradient">
                             <h3 class="card__overlay-title">Пицца</h3>
                         </a>
@@ -68,7 +64,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/soups.jpg" alt="Раздел с супами">
+                        <img class="card__image" src="images/menu-categories/soups.jpg" alt="Раздел с супами">
                         <a href="#" class="card__overlay card__overlay_gradient">
                             <h3 class="card__overlay-title">Супы</h3>
                         </a>
@@ -76,7 +72,8 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/hot-dishes.jpg" alt="Раздел с горячими блюдами">
+                        <img class="card__image" src="images/menu-categories/hot-dishes.jpg"
+                             alt="Раздел с горячими блюдами">
                         <a href="#" class="card__overlay card__overlay_gradient">
                             <h3 class="card__overlay-title">Горячие блюда</h3>
                         </a>
@@ -84,7 +81,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/salads.jpg" alt="Раздел с салатами">
+                        <img class="card__image" src="images/menu-categories/salads.jpg" alt="Раздел с салатами">
                         <a href="#" class="card__overlay card__overlay_gradient">
                             <h3 class="card__overlay-title">Салаты</h3>
                         </a>
@@ -99,7 +96,8 @@
             <ul class="card-container">
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/chinese-egg-soup.jpg" alt="Китайский яичный суп">
+                        <img class="card__image" src="images/new-products/chinese-egg-soup.jpg"
+                             alt="Китайский яичный суп">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container">
                             <div class="badge-container__badge badge-container__badge_vegan"></div>
@@ -113,7 +111,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/paella.jpg" alt="Паэлья">
+                        <img class="card__image" src="images/new-products/paella.jpg" alt="Паэлья">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container">
                             <div class="badge-container__badge badge-container__badge_vegan"></div>
@@ -128,7 +126,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/beef-bourguignon.jpg" alt="Биф Бургеньон">
+                        <img class="card__image" src="images/new-products/beef-bourguignon.jpg" alt="Биф Бургеньон">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container"></div>
                     </div>
@@ -141,7 +139,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/cucumbers.jpg" alt="Битые огурцы">
+                        <img class="card__image" src="images/new-products/cucumbers.jpg" alt="Битые огурцы">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container">
                             <div class="badge-container__badge badge-container__badge_vegan"></div>
@@ -158,12 +156,12 @@
         </div>
     </section>
     <section class="section">
-        <h1 class="section__title">Популярное</h1>
+        <h2 class="section__title">Популярное</h2>
         <div class="section__content">
             <ul class="card-container">
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/pepperoni.jpg" alt="Пепперони">
+                        <img class="card__image" src="images/popular/pepperoni.jpg" alt="Пепперони">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container">
                             <div class="badge-container__badge badge-container__badge_vegan"></div>
@@ -179,7 +177,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/gorgonzola-pear.jpg" alt="Груша Горгонзола">
+                        <img class="card__image" src="images/popular/gorgonzola-pear.jpg" alt="Груша Горгонзола">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container">
                             <div class="badge-container__badge badge-container__badge_vegan"></div>
@@ -195,7 +193,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/pho-bo.jpg" alt="Фо Бо">
+                        <img class="card__image" src="images/popular/pho-bo.jpg" alt="Фо Бо">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container"></div>
                     </div>
@@ -209,7 +207,7 @@
                 </li>
                 <li class="card">
                     <div class="card__image-wrapper">
-                        <img class="card__image" src="images/tom-yam-seafood.jpg" alt="Том Ям с морепродуктами">
+                        <img class="card__image" src="images/popular/tom-yam-seafood.jpg" alt="Том Ям с морепродуктами">
                         <a href="#" class="card__overlay"></a>
                         <div class="badge-container">
                             <div class="badge-container__badge badge-container__badge_spicy"></div>
@@ -223,6 +221,115 @@
                             и сыр моцарелла</p>
                     </a>
                     <button class="card__price">590 ₽</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__title">Акции</h2>
+        <div class="section__content">
+            <ul class="card-container">
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image-other" src="images/promo/platinum-status.jpg" alt="Платиновый статус">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <h3 class="card__overlay-title-other">Статус «Platina» привилегированным клиентам</h3>
+                        </a>
+                        <div class="badge-container badge-container-info">
+                            <span class="badge-container__badge badge-container__badge_info">Скидка 10%</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image-other" src="images/promo/welcome-discount.jpg"
+                             alt="Скидка при регистрации">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <h3 class="card__overlay-title-other">Скидка на все покупки при регистрации</h3>
+                        </a>
+                        <div class="badge-container badge-container-info">
+                            <span class="badge-container__badge badge-container__badge_info">Скидка 5%</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__title">События</h2>
+        <div class="section__content">
+            <ul class="card-container">
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image-other" src="images/events/stand-up-announcement.jpg"
+                             alt="Первый Stand UP">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <h3 class="card__overlay-title-other">Первый в этом году Stand-Up</h3>
+                        </a>
+                        <div class="badge-container badge-container-info">
+                            <span class="badge-container__badge badge-container__badge_info">27 января</span>
+                            <span class="badge-container__badge badge-container__badge_info">В 21:00</span>
+                        </div>
+                        <div class="badge-container badge-container-status">
+                            <span class="badge-container__badge badge-container__badge_available">Скоро</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image-other" src="images/events/gastrotech-birthday.jpg"
+                             alt="День рождения в «Гастроцех»">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <h3 class="card__overlay-title-other">День рождения в «Гастроцех»</h3>
+                        </a>
+                        <div class="badge-container badge-container-info">
+                            <span class="badge-container__badge badge-container__badge_info">21 января</span>
+                            <span class="badge-container__badge badge-container__badge_info">Скидка 20%</span>
+                        </div>
+                        <div class="badge-container badge-container-status">
+                            <span class="badge-container__badge badge-container__badge_completed">Завершено</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="section__button">Все события</button>
+    </section>
+    <section class="section">
+        <h2 class="section__title">Наши заведения</h2>
+        <div class="section__content">
+            <ul class="card-container">
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image-other" src="images/restaurants/gastrotech-cafe.jpg"
+                             alt="Фудкорт — Кафе «Гастроцех»">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <h3 class="card__overlay-title-other">Фудкорт — Кафе «Гастроцех»</h3>
+                        </a>
+                        <div class="badge-container badge-container-info">
+                            <span class="badge-container__badge badge-container__badge_info">Открыт еще 1 ч 20 мин</span>
+                            <span class="badge-container__badge badge-container__badge_info">с 10:00 до 23:00</span>
+                        </div>
+                        <div class="badge-container badge-container-status">
+                            <span class="badge-container__badge badge-container__badge_available">Открыт</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card__image-wrapper">
+                        <img class="card__image-other" src="images/restaurants/gastrotech-pizza.jpg"
+                             alt="«Гастроцех» Пицца">
+                        <a href="#" class="card__overlay card__overlay_gradient">
+                            <h3 class="card__overlay-title-other">«Гастроцех» Пицца</h3>
+                        </a>
+                        <div class="badge-container badge-container-info">
+                            <span class="badge-container__badge badge-container__badge_info">Открыт еще 1 ч 20 мин</span>
+                            <span class="badge-container__badge badge-container__badge_info">с 10:00 до 23:00</span>
+                        </div>
+                        <div class="badge-container badge-container-status">
+                            <span class="badge-container__badge badge-container__badge_available">Открыт</span>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>

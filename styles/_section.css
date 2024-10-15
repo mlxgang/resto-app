@@ -10,11 +10,22 @@
 .section__title {
     font-size: 40px;
     line-height: 48px;
+    letter-spacing: 1px;
 }
 
 .card-container {
     display: flex;
     flex-direction: row;
     gap: 32px;
+}
+
+.section__button {
+    padding: 14px 22px;
+    background-color: transparent;
+    border: 2px solid var(--text-primary-dark);
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
 }
 

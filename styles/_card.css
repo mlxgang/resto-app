@@ -17,6 +17,12 @@
     height: 304px;
 }
 
+.card__image-other {
+    width: 640px;
+    height: 360px;
+    object-fit: cover;
+}
+
 .card__overlay {
     display: flex;
     align-items: flex-end;
@@ -32,11 +38,22 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 
+.card__overlay > h3 {
+    align-self: end;
+    color: var(--text-primary-light);
+}
+
 .card__overlay-title {
+    padding: 16px;
     font-size: 24px;
     line-height: 32px;
-    padding: 256px 16px 16px;
-    color: var(--text-primary-light);
+}
+
+.card__overlay-title-other {
+    padding: 32px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1px;
 }
 
 .card-text {
@@ -82,11 +99,24 @@
     z-index: 2;
 }
 
+.badge-container-status {
+    display: flex;
+    top: 32px;
+    right: 32px;
+}
+
+.badge-container-info {
+    display: flex;
+    top: 32px;
+    left: 32px;
+}
+
 .badge-container__badge {
     border-radius: 8px;
     padding: 8px;
-    width: 36px;
-    height: 36px;
+    color: var(--text-primary-light);
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .badge-container__badge_vegan {
@@ -94,6 +124,7 @@
 }
 
 .badge-container__badge_vegan::before {
+    display: flex;
     content: url('../public/icons/20/badge-vegan.svg');
 }
 
@@ -102,6 +133,7 @@
 }
 
 .badge-container__badge_spicy::before {
+    display: flex;
     content: url('../public/icons/20/badge-spicy.svg');
 }
 
@@ -110,5 +142,20 @@
 }
 
 .badge-container__badge_seafood::before {
+    display: flex;
     content: url('../public/icons/20/badge-seafood.svg');
+}
+
+.badge-container__badge_info {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.badge-container__badge_available {
+    background-color: #FEDD2C;
+    color: var(--text-primary-dark);
+}
+
+.badge-container__badge_completed {
+    background-color: #727272;
+    color: var(--text-primary-light);
 }
