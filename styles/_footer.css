@@ -1,0 +1,125 @@
+.footer {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.footer-content {
+    width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 64px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--footer-dark);
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section:last-of-type {
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.social-links__item {
+    display: flex;
+    background-color: var(--background-dark);
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--footer-dark);
+    transition: color .2s ease-out;
+}
+
+.social-links__item:hover {
+    color: var(--primary-light);
+}
+
+.social-links__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.apps-links {
+    display: flex;
+    gap: 8px;
+}
+
+.app_links__item {
+    display: flex;
+}
+
+.apps-links__icon {
+    width: 138px;
+    height: 40px;
+    opacity: .5;
+    transition: opacity .2s ease-out;
+}
+
+.apps-links__icon:hover {
+    opacity: 1;
+}
+
+.legal-information {
+    display: flex;
+    gap: 16px;
+}
+
+.copyright, .legal-information__item {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    transition: color .2s ease-out;
+}
+
+.legal-information__item:hover {
+    color: var(--primary-light);
+}
+
+.payment-methods {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-methods__item {
+    background-color: var(--background-dark);
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: flex;
+}
+
+.payment-methods__icon {
+    color: var(--footer-dark);
+    width: 32px;
+    height: 21px;
+}
+
+.footer-line {
+    border-top: 1px solid var(--background-dark);
+}
+
+.copyright-preax, .copyright-preax a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.copyright-preax a {
+    text-decoration: underline 1px solid var(--footer-dark);
+    text-underline-offset: 3px;
+    transition: color .2s ease-out;
+}
+
+.copyright-preax a:hover {
+    color: var(--primary-light);
+}

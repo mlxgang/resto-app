@@ -40,7 +40,7 @@
 
 .card__overlay > h3 {
     align-self: end;
-    color: var(--text-primary-light);
+    color: var(--primary-light);
 }
 
 .card__overlay-title {
@@ -53,10 +53,11 @@
     padding: 32px;
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: 1px;
+    text-wrap: balance;
 }
 
 .card-text {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -70,7 +71,7 @@
 .card-text__description {
     font-size: 16px;
     line-height: 24px;
-    color: var(--text-secondary-dark);
+    color: var(--secondary-dark);
     font-weight: 400;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -78,7 +79,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 3em;
-
 }
 
 .card__price {
@@ -88,74 +88,10 @@
     line-height: 24px;
     text-align: center;
     border-radius: 16px;
+    transition: color .2s ease-out, background-color .2s ease-out;
 }
 
-.badge-container {
-    position: absolute;
-    display: flex;
-    top: 8px;
-    right: 8px;
-    gap: 8px;
-    z-index: 2;
-}
-
-.badge-container-status {
-    display: flex;
-    top: 32px;
-    right: 32px;
-}
-
-.badge-container-info {
-    display: flex;
-    top: 32px;
-    left: 32px;
-}
-
-.badge-container__badge {
-    border-radius: 8px;
-    padding: 8px;
-    color: var(--text-primary-light);
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.badge-container__badge_vegan {
-    background-color: #1DAA0F;
-}
-
-.badge-container__badge_vegan::before {
-    display: flex;
-    content: url('../public/icons/20/badge-vegan.svg');
-}
-
-.badge-container__badge_spicy {
-    background-color: #FC7D04;
-}
-
-.badge-container__badge_spicy::before {
-    display: flex;
-    content: url('../public/icons/20/badge-spicy.svg');
-}
-
-.badge-container__badge_seafood {
-    background-color: #0094E4;
-}
-
-.badge-container__badge_seafood::before {
-    display: flex;
-    content: url('../public/icons/20/badge-seafood.svg');
-}
-
-.badge-container__badge_info {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.badge-container__badge_available {
-    background-color: #FEDD2C;
-    color: var(--text-primary-dark);
-}
-
-.badge-container__badge_completed {
-    background-color: #727272;
-    color: var(--text-primary-light);
+.card__price:hover {
+    color: var(--background-dark);
+    background-color: var(--hover-light);
 }

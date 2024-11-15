@@ -7,10 +7,13 @@
     gap: 32px;
 }
 
+.section:last-of-type {
+    padding-bottom: 64px;
+}
+
 .section__title {
     font-size: 40px;
     line-height: 48px;
-    letter-spacing: 1px;
 }
 
 .card-container {
@@ -22,10 +25,17 @@
 .section__button {
     padding: 14px 22px;
     background-color: transparent;
-    border: 2px solid var(--text-primary-dark);
+    border: 2px solid var(--primary-dark);
     border-radius: 16px;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+    height: 56px;
+    transition: color .2s ease-out, background-color .2s ease-out;
+}
+
+.section__button:hover {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
 }
 

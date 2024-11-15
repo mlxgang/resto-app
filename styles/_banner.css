@@ -1,20 +1,21 @@
 .banner {
+    min-width: 1440px;
     padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background-color: var(--text-primary-dark);
+    background-color: var(--primary-dark);
 }
 
 .banner__title {
     font-size: 18px;
     line-height: 24px;
-    color: var(--text-primary-light);
+    color: var(--primary-light);
 }
 
-.banner__icon {
-    cursor: pointer;
+.banner__button {
+    background-color: transparent;
     width: 24px;
     height: 24px;
 }

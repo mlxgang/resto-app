@@ -1,4 +1,5 @@
 .header {
+    min-width: 1440px;
     background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
 }
 
@@ -9,51 +10,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navigation-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-}
-
-.logo {
-    display: flex;
-}
-
-.navigation__item {
-    color: var(--text-secondary-dark);
-    font-size: 16px;
-    line-height: 24px;
+    height: 80px;
 }
 
 .other-info {
     display: flex;
     align-items: center;
     gap: 64px;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-style: normal;
-}
-
-.contacts__phone {
-    color: var(--text-secondary-dark);
-    font-size: 18px;
-    line-height: 24px;
-    word-spacing: 2px;
-}
-
-.contacts__workings-hours {
-    color: var(--text-secondary-dark);
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: normal;
-    word-spacing: 2px;
 }
 
 .user-activity {
@@ -64,10 +27,26 @@
 .user-activity__button {
     display: flex;
     padding: 10px 14px;
-    border: 2px solid var(--text-primary-dark);
+    border: 2px solid var(--primary-dark);
     border-radius: 16px;
     background-color: transparent;
-    cursor: pointer;
+    transition: color .2s ease-out, background-color .2s ease-out, border .2s ease-out;
+}
+
+.user-activity__button:hover {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.user-activity__button_secondary {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.user-activity__button_secondary:hover {
+    border: 2px solid var(--primary-light);
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
 }
 
 .user-activity__button-icon {
@@ -75,6 +54,3 @@
     height: 24px;
 }
 
-.user-activity__button_secondary {
-    background-color: var(--text-primary-dark);
-}

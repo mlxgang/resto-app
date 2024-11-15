@@ -1,0 +1,33 @@
+.navigation {
+    align-self: center;
+}
+
+.navigation-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer .navigation-wrapper {
+    gap: 32px;
+}
+
+.navigation__item {
+    color: var(--secondary-dark);
+    font-size: 16px;
+    line-height: 24px;
+    transition: color .2s ease-out;
+}
+
+.navigation__item:hover {
+    color: var(--primary-dark);
+}
+
+.footer .navigation__item {
+    color: var(--primary-light);
+}
+
+.footer .navigation__item:hover {
+    color: var(--footer-dark);
+}

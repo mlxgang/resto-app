@@ -1,0 +1,44 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer .contacts {
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.contacts__phone {
+    color: var(--secondary-dark);
+    font-size: 18px;
+    line-height: 24px;
+    transition: color .2s ease-out;
+}
+
+.contacts__phone:hover {
+    color: var(--primary-dark);
+}
+
+.footer .contacts__phone {
+    color: var(--primary-light);
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.footer .contacts__phone:hover {
+    color: var(--footer-dark);
+}
+
+.contacts__workings-hours {
+    color: var(--secondary-dark);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.footer .contacts__workings-hours {
+    color: var(--footer-dark);
+    font-size: 14px;
+    line-height: 20px;
+}
