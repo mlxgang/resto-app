@@ -14,8 +14,12 @@
     color: var(--primary-light);
 }
 
-.banner__button {
-    background-color: transparent;
+.banner__icon {
     width: 24px;
     height: 24px;
+}
+
+.banner__button {
+    background-color: transparent;
+    display: flex;
 }
